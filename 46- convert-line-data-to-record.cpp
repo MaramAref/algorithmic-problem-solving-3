@@ -24,10 +24,12 @@ vector<string>SplitString(string S1,string Delim){
 			vString.push_back(sWord);
 		}
 		S1.erase(0, pos + Delim.length());
-		if(S1!=""){
+	}  
+	
+      if(S1!=""){
 			vString.push_back(S1);
 		}
-	}
+	
 	return vString;
 }
 
